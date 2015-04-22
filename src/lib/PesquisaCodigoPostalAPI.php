@@ -34,9 +34,9 @@ class PesquisaCodigoPostalAPI {
 		return $response;
 	}
 
-	public function codigoPostal($cp4,$cp3){
+	public function codigoPostal($cp4,$cp3,$offset){
 
-		$url 		= $this->url.'/v1/cp/'.$cp4.'/'.$cp3;
+		$url 		= $this->url.'/v1/cp/'.$cp4.'/'.$cp3.'?offset='.$offset;
 
 		$page_data 	= $this->apiConnect->get($url,$this->options);
 
