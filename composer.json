@@ -1,0 +1,26 @@
+{
+    "name": "pesquisacodigopostal/api-codigopostal-laravel",
+    "description": "",
+    "authors": [
+        {
+            "name": "pesquisacodigopostal.pt",
+            "email": "support@pesquisacodigopostal.pt"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*",
+        "guzzlehttp/guzzle": "~5.0"
+
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations",
+              "src/lib"
+        ],
+        "psr-0": {
+            "Pesquisacodigopostal\\ApiCodigopostalLaravel\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
