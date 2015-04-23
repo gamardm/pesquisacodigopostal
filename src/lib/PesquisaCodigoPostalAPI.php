@@ -18,10 +18,6 @@ class PesquisaCodigoPostalAPI {
 
 	}
 
-	 function obterConcelhos(){
-
-		return var_dump(\Config::get('api-codigopostal-laravel::token'));
-	}
 
 	private function call($url){
 
