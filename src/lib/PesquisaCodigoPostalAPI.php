@@ -12,7 +12,7 @@ class PesquisaCodigoPostalAPI {
 	function __construct()
 	{
 		$this->apiConnect = new Client();
-		$this->url = 'http://codigos-postais-api.l';
+		$this->url = 'http://api.pesquisacodigopostal.pt';
 
 		$this->options = [ 'headers' => [ 'X-Auth-Token' => \Config::get('api-codigopostal-laravel::token')]];
 
