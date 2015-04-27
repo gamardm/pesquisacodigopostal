@@ -34,7 +34,7 @@ class PesquisaCodigoPostalAPI {
 		return $this->call($url);
 	}
 
-	public function codigoPostal($cp4,$cp3,$offset){
+	public function codigoPostal($cp4,$cp3,$offset = ""){
 
 		$url 		= $this->url.'/v1/cp/'.$cp4.'/'.$cp3.'?offset='.$offset;
 
@@ -42,7 +42,7 @@ class PesquisaCodigoPostalAPI {
 
 	}
 
-	public function codigoPostal4Digitos($cp4,$offset){
+	public function codigoPostal4Digitos($cp4,$offset = ""){
 
 		$url 		= $this->url.'/v1/cp/'.$cp4.'?offset='.$offset;
 
@@ -50,7 +50,7 @@ class PesquisaCodigoPostalAPI {
 
 	}
 
-	public function obterCodigoPostalPorMoradaELocalidade($morada,$localidade, $offset){
+	public function obterCodigoPostalPorMoradaELocalidade($morada,$localidade, $offset = ""){
 
 		$url 		= $this->url.'/v1/morada/'.$morada.'/localidade/'.$localidade.'?offset='.$offset;
 
@@ -58,7 +58,7 @@ class PesquisaCodigoPostalAPI {
 
 	}
 
-	public function obterCodigoPostalPorMorada($morada, $offset){
+	public function obterCodigoPostalPorMorada($morada, $offset = ""){
 
 		$url 		= $this->url.'/v1/morada/'.$morada.'?offset='.$offset;
 
